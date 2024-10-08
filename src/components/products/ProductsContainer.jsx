@@ -1,9 +1,15 @@
+import { useContext } from "react";
 import Product from "./Product";
+import { ProductContext } from "../../App";
 
 function ProductsContainer() {
+  const products = useContext(ProductContext);
+
   return (
     <div>
-      <Product />
+      {products.map((product) => (
+        <Product key={product.id} product={product} />
+      ))}
     </div>
   );
 }
