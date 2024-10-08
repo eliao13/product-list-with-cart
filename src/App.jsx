@@ -23,8 +23,14 @@ const ProductProvider = ({ children }) => {
 function App() {
   return (
     <ProductProvider>
-      <ProductsContainer />
-      <CartContainer />
+      <div className="flex w-full gap-4 md:gap-6 lg:gap-8 p-12">
+        <div className="w-2/3">
+          <ProductsContainer />
+        </div>
+        <div className="w-1/3">
+          <CartContainer />
+        </div>
+      </div>
     </ProductProvider>
   );
 }

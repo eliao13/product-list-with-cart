@@ -7,7 +7,7 @@ function CartItemContainer() {
     <div>
       <CartItem />
       <OrderTotal />
-      <Button text="Confirm Order" />
+      <Button text="Confirm Order" variant="confirm-order" />
     </div>
   );
 }

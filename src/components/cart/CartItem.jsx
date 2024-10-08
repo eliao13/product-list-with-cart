@@ -9,7 +9,10 @@ function CartItem({ name, price, quantity }) {
       <p>{quantity}</p>
       <p>{price}</p>
       <p>{total}</p>
-      <Button text="Remove" />
+      <Button
+        icon="/assets/images/icon-remove-item.svg"
+        variant="remove-item"
+      />
     </div>
   );
 }
